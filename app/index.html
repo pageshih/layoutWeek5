@@ -1,0 +1,209 @@
+---
+title: Assignment
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<!-- header & notification bar -->
+<div class="d-flex align-items-center justify-content-between mb-8">
+  <div class="d-flex flex-wrap align-items-end">
+    <h2 class="me-9">Assignment</h2>
+    <div class="dropdown">
+      <button
+        class="d-flex btn btn-none fw-bold p-0 ps-1"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        All Courses<span class="material-icons text-success">expand_more</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Course1</a></li>
+        <li><a class="dropdown-item" href="#">Course2</a></li>
+        <li><a class="dropdown-item" href="#">Course3</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="tools">
+    <a href="#" class="material-icons me-8">
+      search
+    </a>
+    <a href="#" class="material-icons">
+      notifications_active
+    </a>
+  </div>
+</div>
+
+
+<!-- messages area -->
+<div class="d-flex flex-wrap flex-lg-nowrap">
+
+  <!-- left title list -->
+  <div class="title me-4">
+    <div class="dropdown mb-1">
+      <button
+        class="d-flex btn btn-none fw-bold p-0 ps-1"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        <span class="me-2">All (4)</span><span class="material-icons text-success">expand_more</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Course1</a></li>
+        <li><a class="dropdown-item" href="#">Course2</a></li>
+        <li><a class="dropdown-item" href="#">Course3</a></li>
+      </ul>
+    </div>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action text-dark">
+        <p class="d-flex justify-content-between fs-4">
+          Chapter Assignment 2<span>4 hrs ago</span>
+        </p>
+        <div class="message-list-title">
+        <p class=" flex-shrink-1 text-truncate w-60">
+          Please check this file for me, thanks!
+        </p>
+        <p class="flex-shrink-0 ms-9 fs-4 fw-normal text-gray600">Emily Wang</p>
+      </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action text-dark">
+        <p class="d-flex justify-content-between fs-4">
+          Chapter Assignment 1<span>12 hrs ago</span>
+        </p>
+        <div class="message-list-title">
+          <p class=" flex-shrink-1 text-truncate w-60">
+            My Homework
+          </p>
+          <p class="flex-shrink-0 ms-9 fs-4 fw-normal text-gray600">David Xu</p>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action text-dark">
+        <p class="d-flex justify-content-between fs-4">
+          Final Assignment<span>18 hrs ago</span>
+        </p>
+        <div class="message-list-title">
+          <p class=" flex-shrink-1 text-truncate w-60">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+          <p class="flex-shrink-0 ms-9 fs-4 fw-normal text-gray600">Tony Wei</p>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action text-dark">
+        <p class="d-flex justify-content-between fs-4">
+          Final Assignment<span>19 hrs ago</span>
+        </p>
+        <div class="message-list-title">
+          <p class=" flex-shrink-1 text-truncate w-60">
+            Lorem ipsum dolor sit amet.
+          </p>
+          <p class="flex-shrink-0 ms-9 fs-4 fw-normal text-gray600">Christina Lin</p>
+        </div>
+        </p>
+      </a>
+    </div>
+  </div>
+  <!-- right expand messages -->
+  <div class="flex-grow-1 more">
+    <p class="fs-4 text-gray600 mb-2 mt-1 text-end">2 comments</p>
+    <div class="card mb-4">
+      <div
+        class="card-header d-flex justify-content-between align-items-center"
+      >
+        <div class="text">
+          <p class="fs-4">Chapter Assignment 2 / HTML&CSS</p>
+          <p class="fw-bold">Please check this file for me, thanks!</p>
+        </div>
+        <div class="dropdown">
+          <button
+            class="d-flex btn btn-none fw-bold p-0"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="material-icons">more_vert</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">reminder</a></li>
+            <li><a class="dropdown-item" href="#">nitofiction</a></li>
+            <li><a class="dropdown-item" href="#">settings</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-body">
+        <!-- student -->
+        <div class="d-flex mb-4">
+          <div
+            class="
+              flex-shrink-0
+              position-relative
+              rounded-circle
+              overflow-hidden
+              selfie
+            "
+          >
+            <img
+              src="./assets/images/emilywang.jpeg"
+              alt=""
+              class="w-100 position-absolute"
+            />
+          </div>
+          <div class="flex-shrink-1 ms-4 pb-4 border-bottom border-gray400">
+            <p class="fw-bold">Emily Wang</p>
+            <p class="mb-4 fs-4 text-gray600">10:38 AM (4 hours ago)</p>
+            <p class="mb-4">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="code">div</span> is bigger than the height of the <span class="code">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</p>
+            <div class="d-inline-block ">
+            <a class="btn btn-light fw-bold border border-gray400 d-flex py-2 ps-3 pe-4" href="./assets/images/pierre-chatel-innocenti-1667193-unsplash.jpg" download="HW-2-David.zip"><span class="material-icons me-2">attach_file</span>HW-2-David.zip</a>
+          </div>
+          </div>
+          <!-- edit message area -->
+          <div class="edit-area">
+
+          </div>
+
+        </div>
+        <!-- mentor -->
+        <div class="d-flex">
+          <div
+            class="
+              flex-shrink-0
+              position-relative
+              rounded-circle
+              overflow-hidden
+              selfie
+            "
+          >
+            <img
+              src="./assets/images/andychen.jpeg"
+              alt=""
+              class="w-100 position-absolute"
+            />
+          </div>
+          <div class="flex-shrink-1 ms-4 mb-2">
+            <p class="d-flex justify-content-between fw-bold">Andy Chen (You)<span class="material-icons"><a href="#" class="me-6">star_border</a><a href="#">edit</a></span></p>
+            <p class="mb-4 fs-4 text-gray600">13:24 AM (1 hours ago)</p>
+            <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br><br>You can: <br><br>　• adjust the <span class="code">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="code">middle</span> ) or<br> 　• change the <span class="code">display</span> so it isn’t inline.</p>
+          </div>
+          </div>
+        </div>
+        </div>
+<!-- end btn -->
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="switch d-flex align-items-center">
+            <a href="#" class="btn me-6 p-0 text-dark ">
+            <span class="material-icons">navigate_before</span>
+          </a>
+            <a href="#" class="btn p-0 text-dark">
+            <span class="material-icons">navigate_next</span>
+          </a>
+          </div>
+          <div class="active-btn">
+            <button class="btn btn-outline-success me-4">Mark as read</button>
+            <button class="btn btn-success">Reply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

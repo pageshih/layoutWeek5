@@ -1,0 +1,73 @@
+.sidebar {
+  min-width: 296px;
+  min-height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  a {
+    display: flex;
+    color: $dark;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base;
+    &:hover {
+      color: $gray-600;
+    }
+  }
+}
+.main {
+  margin-left: 296px;
+}
+
+.current-page {
+  display: flex;
+  &::before {
+    content: " ";
+    border-left: 4px solid $success;
+    margin-left: -$spacer8;
+    margin-right: $spacer7;
+  }
+  a {
+    color: $success;
+    &:visited {
+      color: $success;
+    }
+    &:hover {
+      color: $success;
+    }
+    &:active {
+      color: $success;
+    }
+  }
+}
+
+.selfie {
+  width: 40px;
+  height: 40px;
+  img {
+    top: -15%;
+    object-fit: cover;
+  }
+}
+
+.tools {
+  button {
+    padding: 0;
+  }
+}
+.title {
+  max-width: 320px;
+}
+.message-list-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-weight: $font-weight-bold;
+}
+.code {
+  background-color: $light;
+  color: $success;
+  padding: 0 4px;
+  font-family: "Roboto Mono";
+}

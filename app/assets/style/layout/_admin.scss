@@ -1,0 +1,54 @@
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+.table {
+  th {
+    padding: 0 0 4px 0;
+  }
+}
+.user-info-modal {
+  .user-img {
+    max-width: 156px;
+    max-height: 156px;
+    overflow: hidden;
+    border-radius: 2px;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .trans {
+    transition: 1s ease;
+    -ms-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -webkit-transition: 1s ease;
+    -o-transition: 1s ease;
+  }
+}
+
+.rotate {
+  transform: rotate(-180deg);
+}
+.verification-btn {
+  color: $success;
+  border-color: $gray-400;
+  &:disabled {
+    color: $gray-400;
+  }
+  &:hover {
+    color: $white;
+    background-color: $success;
+    border-color: $success;
+  }
+}
+.form-select {
+  &:invalid {
+    color: $gray-600;
+  }
+  option {
+    color: $dark;
+  }
+}
