@@ -131,7 +131,7 @@ current: index
           </ul>
         </div>
       </div>
-      <div class="card-body">
+      <div class="card-body" id="cardPb0">
         <!-- student -->
         <div class="d-flex mb-4">
           <div
@@ -157,14 +157,9 @@ current: index
             <a class="btn btn-light fw-bold border border-gray400 d-flex py-2 ps-3 pe-4" href="./assets/images/pierre-chatel-innocenti-1667193-unsplash.jpg" download="HW-2-David.zip"><span class="material-icons me-2">attach_file</span>HW-2-David.zip</a>
           </div>
           </div>
-          <!-- edit message area -->
-          <div class="edit-area">
-
-          </div>
-
         </div>
         <!-- mentor -->
-        <div class="d-flex">
+        <div class="d-flex" id="mentor" >
           <div
             class="
               flex-shrink-0
@@ -187,9 +182,39 @@ current: index
           </div>
           </div>
         </div>
+                  <!-- edit area -->
+                  <div class="border-top edit-area" id="editArea">
+                    <div class="card-header d-flex align-items-center flex-wrap py-4 px-6 ">
+                      <div class="btn-group me-6">
+                        <button type="button" class="btn btn-none dropdown-toggle fw-bold px-1 py-0" data-bs-toggle="dropdown" aria-expanded="false">
+                          Body Text
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="material-icons me-6">format_bold</a>
+                      <a href="#" class="material-icons me-6">format_italic</a>
+                      <a href="#" class="material-icons me-6">format_list_bulleted</a>
+                      <a href="#" class="material-icons me-6">format_list_numbered</a>
+                      <a href="#" class="material-icons me-6">insert_photo</a>
+                      <a href="#" class="material-icons me-6">insert_link</a>
+                      <a href="#" class="material-icons">code</a>
+                    </div>
+                    <div class="card-body">
+                     <textarea type="text" class="edit-text" placeholder="Reply an answer…"></textarea>
+                      <div class="active-btn d-flex justify-content-end">
+                        <button class="btn btn-outline-success me-4" id="editCancel">Cancel</button>
+                        <button class="btn btn-success">Reply</button>
+                      </div>
+                    </div>
+                  </div>
+               
         </div>
 <!-- end btn -->
-        <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex justify-content-between align-items-center" id="endBtn">
           <div class="switch d-flex align-items-center">
             <a href="#" class="btn me-6 p-0 text-dark ">
             <span class="material-icons">navigate_before</span>
@@ -200,9 +225,11 @@ current: index
           </div>
           <div class="active-btn">
             <button class="btn btn-outline-success me-4">Mark as read</button>
-            <button class="btn btn-success">Reply</button>
+            <button class="btn btn-success" id="reply">Reply</button>
           </div>
         </div>
+
+
       </div>
     </div>
   </div>
